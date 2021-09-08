@@ -1,48 +1,28 @@
 import UIKit
+// Integer Literal
+let decimalInteger = 17 // 17 in decimal notation
+let binaryInteger = 0b10001 // 17 in binary notation
+let octalInteger = 0o21 // 17 in octal notation
+let hexadecimalInteger = 0x11 // 17 in hexadecimal notation
+// Floating Literal
+let decimalDouble = 12.1875
+let exponentDouble = 1.21875e1
+let hexadecimalDouble = 0xC.3p0
+// String Literals
+let stringL = "Hello\tWorld\n\nHello\'Swift 4\'"
+print(stringL)
 /**
-Tuple type
-var tupleName = (value1, value2,..., any number of values)
+Constant declaration
+let constantName = <initial value>
 */
-var error501 = (501, "Not implemented")
-print("The code is \(error501.0)")
-print("The definition of error is \(error501.1)")
-var error502 = (errorCode: 501, description: "Not Implemented")
-print(error502.description)
-// Optional type
-// var perhapsStr: String? = nil
-var myString: String? = nil
-if myString != nil {
-    print(myString)
-} else {
-    print("myString has nil value")
-}
-// Forced unwrapping
-var myString_0:String?
-myString_0 = "Hello, Swift 4!"
-if myString_0 != nil {
-    print(myString_0!)
-} else {
-    print("myString has nil value")
-}
-// Automatic unwrapping
-var myString_1:String!
-myString_1 = "Hello, Swift 4!"
-if myString_1 != nil {
-    print(myString_1!)
-} else {
-    print("myString has nil value")
-}
+let constA = 42
+print(constA)
 /**
- Optional Binding
- S:tatement
- if let constantName = someOptional {
-    statements
- }
- */
-var myString_2: String?
-myString_2 = "Hello, Swift 4!"
-if let yourString = myString_2 {
-    print("Your string has - \(yourString)")
-} else {
-    print("Your string does not have a value")
-}
+Type annotation
+let constantName:<data type> = <optional initial value>
+*/
+let constB:Float = 3.14159
+print(constB)
+let constA0 = "Godzilla"
+let constB0 = 1000.00
+print("Value of \(constA0) is more than \(constB0) millions")
