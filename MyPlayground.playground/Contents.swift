@@ -1,4 +1,13 @@
 import UIKit
+/**
+Tuple type
+var tupleName = (value1, value2,..., any number of values)
+*/
+var error501 = (501, "Not implemented")
+print("The code is \(error501.0)")
+print("The definition of error is \(error501.1)")
+var error502 = (errorCode: 501, description: "Not Implemented")
+print(error502.description)
 // Optional type
 // var perhapsStr: String? = nil
 var myString: String? = nil
