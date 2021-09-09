@@ -1,4 +1,53 @@
 import UIKit
+// Array
+/**
+Init
+var someArray = [SomeType]()
+*/
+var someInts:[Int] = [10, 20, 30]
+// Iterating over an array
+var someStrs = [String]()
+someStrs.append("Apple")
+someStrs.append("Amazon")
+someStrs += ["Google"]
+for item in someStrs {
+    print(item)
+}
+// using enumerate() function which returns the index of an item along with its value
+for (index, item) in someStrs.enumerated() {
+    print("Value at index = \(index) is \(item)")
+}
+// Adding two arrays
+var intsA = [Int](repeating: 2, count: 2)
+var intsB = [Int](repeating: 1, count: 3)
+var intsC = intsA + intsB
+for item in intsC {
+    print(item)
+}
+print("Total items in intsA = \(intsA.count)")
+print("Total items in intsB = \(intsB.count)")
+print("Total items in intsC = \(intsC.count)")
+// The empty property
+var intsA_0 = [Int](repeating: 2, count:2)
+var intsB_0 = [Int](repeating: 1, count:3)
+var intsC_0 = [Int]()
+print("intsA_0.isEmpty = \(intsA_0.isEmpty)")
+print("intsB_0.isEmpty = \(intsB_0.isEmpty)")
+print("intsC_0.isEmpty = \(intsC_0.isEmpty)")
+/**
+var someArray=[SomeType](count: NumberOfElements, repeating: InitialValue)
+*/
+// Given size and repeating value
+var someInt = [Int](repeating: 10, count: 3)
+someInt.append(20)
+someInt.append(30)
+someInt += [40]
+// Modify last element
+someInt[5] = 50
+var someVar = someInt[0]
+print( "Value of first element is \(someVar)" )
+print( "Value of second element is \(someInt[4])" )
+print( "Value of third element is \(someInt[5])" )
 // Character
 var char1: Character = "A"
 print("Value of char1 \(char1)")
