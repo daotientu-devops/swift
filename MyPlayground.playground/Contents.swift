@@ -1,4 +1,63 @@
 import UIKit
+// Unicode string
+var unicodeString = "Dog???"
+print("UTF-8 Codes: ")
+for code in unicodeString.utf8 {
+    print("\(code)")
+}
+print("\n")
+print("UTF-16 Codes: ")
+for code in unicodeString.utf16 {
+    print("\(code)")
+}
+// Stirng iterating: lặp lại
+for char in "ThisString" {
+    print(char, terminator: " ")
+}
+// String concatenation
+let constA = "Hello,"
+let constB = " World!"
+var stringA_1 = constA + constB
+print(stringA_1)
+// String length
+var varA = "Hello, Swift 4!"
+print("\(varA), length is \(varA.count)")
+// String comparison
+var varA_0 = "Hello, Swift 4!"
+var varB_0 = "Hello, Wordl!"
+if varA_0 == varB_0 {
+    print("\(varA_0) and (varB_0) are equal")
+} else {
+    print("\(varA_0) and (varB_0) are not equal")
+}
+// Empty string
+// Empty string creation using String literal
+var stringA_0 = ""
+if stringA_0.isEmpty {
+    print("stringA_0 is empty")
+} else {
+    print("stringA_0 is not empty")
+}
+// Empty string creation using String instance
+var stringB_0 = String()
+if stringB_0.isEmpty {
+    print("stringB_0 is empty")
+} else {
+    print("stringB_0 is not empty")
+}
+// String creation using String literal
+var stringA = "Hello, Swift 4!"
+print(stringA)
+// String creation using String instance
+var stringB = String("Hello, Swfit 4!")
+print(stringB)
+// Multiple line string
+var stringC = """
+Hey this is a
+example of multiple Line
+string by tutorialsPoint
+"""
+print(stringC)
 // Integer Literal
 let decimalInteger = 17 // 17 in decimal notation
 let binaryInteger = 0b10001 // 17 in binary notation
