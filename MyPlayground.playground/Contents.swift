@@ -1,4 +1,15 @@
 import UIKit
+// Character
+var char1: Character = "A"
+print("Value of char1 \(char1)")
+for ch in "Hello" {
+    print(ch)
+}
+// Concatenating string with character
+var varA_1:String = "Hello"
+var varB_1:Character = "G"
+varA_1.append(varB_1)
+print(varA_1)
 // Unicode string
 var unicodeString = "Dog???"
 print("UTF-8 Codes: ")
